@@ -172,7 +172,7 @@ gojo AI ChatBot is the only ai system which can detect & reply upto 200 language
 *Reports bugs at*: @HumanzBotSupport
 *Powered by* @GojoManagerbot"""
 
-CHATBOTK_HANDLER = CommandHandler("chatbot", gojo)
+CHATBOTK_HANDLER = CommandHandler("chatbot", merissa)
 ADD_CHAT_HANDLER = CallbackQueryHandler(merissaadd, pattern=r"add_chat")
 RM_CHAT_HANDLER = CallbackQueryHandler(merissarm, pattern=r"rm_chat")
 CHATBOT_HANDLER = MessageHandler(
