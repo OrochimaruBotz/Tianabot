@@ -426,7 +426,7 @@ Bᴇғᴏʀᴇ  Wᴇ  Gᴏ,  I  Nᴇᴇᴅ  Aᴅᴍɪɴ  Pᴇʀᴍɪssɪᴏɴs  
         query.message.edit_text(
             text="""*Cᴏɴɢʀᴀɢᴜʟᴀᴛɪᴏɴs,  Tʜɪꜱ  Bᴏᴛ  Nᴏᴡ  Rᴇᴀᴅʏ  Tᴏ  Mᴀɴᴀɢᴇ  Yᴏᴜʀ  Gʀᴏᴜᴘ
 
-Hᴇʀᴇ  Aʀᴇ  Sᴏᴍᴇ  Essᴇɴᴛɪᴀʟᴛ  Tᴏ  Tʀʏ  Oɴ Tɪᴀɴᴀ.
+Hᴇʀᴇ  Aʀᴇ  Sᴏᴍᴇ  Essᴇɴᴛɪᴀʟᴛ  Tᴏ  Tʀʏ  Oɴ Gojo.
 
 ×  Aᴅᴍɪɴ  Tᴏᴏʟs
 ʙᴀsɪᴄ  ᴀᴅᴍɪɴ  ᴛᴏᴏʟs  ʜᴇʟᴘ  ʏᴏᴜ  ᴛᴏ  ᴘʀᴏᴛᴇᴄᴛ  ᴀɴᴅ  ᴘᴏᴡᴇʀᴜᴘ  ʏᴏᴜʀ  ɢʀᴏᴜᴘ
@@ -605,7 +605,7 @@ Aɢᴀɪɴ  Tʜᴀɴᴋs  Fᴏʀ  Usɪɴɢ  Mᴇ
 
 ✗ *Authorised Users List*:
 
-Tiana has a additional feature for non-admin users who want to use admin commands
+Gojo has a additional feature for non-admin users who want to use admin commands
 -Auth users can skip, pause, stop, resume Voice Chats even without Admin Rights.
 
 
@@ -628,17 +628,17 @@ Tiana has a additional feature for non-admin users who want to use admin command
             text="""✗ *Here is the help for Bot Commands*:
 
 
-/start 
+/mstart 
 - Start the Tiana Music Bot.
 
-/help 
+/mhelp 
 - Get Commands Helper Menu with detailed explanations of commands.
 
-/settings 
+/msettings 
 - Get Settings dashboard of a group. You can manage Auth Users Mode. Commands Mode from here.
 
 /ping
-- Ping the Bot and check Ram, Cpu etc stats of Tiana.""",
+- Ping the Bot and check Ram, Cpu etc stats of Gojo.""",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="tiana_music")]]
@@ -717,14 +717,14 @@ Support
         )
     elif query.data == "tiana_source":
         query.message.edit_text(
-            text="""*Tianabot is Now Open Source Bot Project.*
+            text="""*Gojobot is Now Open Source Bot Project.*
 
 *Click below Button to Get Source Code.*""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="📄 𝙎𝙤𝙪𝙧𝙘𝙚", url="github.com/Prince-Botz/Tianabot"),                 
+                    InlineKeyboardButton(text="📄 𝙎𝙤𝙪𝙧𝙘𝙚", url="github.com"),                 
                     InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="about_"),
                  ]    
                 ]
@@ -1066,7 +1066,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "𝙏𝙞𝙖𝙣𝙖𝘽𝙤𝙩 𝙐𝙥𝙙𝙖𝙩𝙚𝙙 𝙎𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮✅")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "GojoB𝙤𝙩 𝙐𝙥𝙙𝙖𝙩𝙚𝙙 𝙎𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮✅")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
