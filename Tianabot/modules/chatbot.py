@@ -46,12 +46,12 @@ def merissarm(update: Update, context: CallbackContext) -> str:
             is_merissa = sql.rem_merissa(user_id)
             return (
                 f"<b>{html.escape(chat.title)}:</b>\n"
-                f"Merissa Chatbot Disable\n"
+                f"Gojo Chatbot Disable\n"
                 f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
             )
         else:
             update.effective_message.edit_text(
-                "Merissa Chatbot disable by {}.".format(
+                "gojo Chatbot disable by {}.".format(
                     mention_html(user.id, user.first_name)
                 ),
                 parse_mode=ParseMode.HTML,
@@ -74,7 +74,7 @@ def merissaadd(update: Update, context: CallbackContext) -> str:
             is_merissa = sql.set_merissa(user_id)
             return (
                 f"<b>{html.escape(chat.title)}:</b>\n"
-                f"Merissa Chatbot Enable\n"
+                f"Gojo Chatbot Enable\n"
                 f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
             )
         else:
@@ -93,7 +93,7 @@ def merissaadd(update: Update, context: CallbackContext) -> str:
 def merissa(update: Update, context: CallbackContext):
     update.effective_user
     message = update.effective_message
-    msg = """**Welcome To Control Panal Of Merissa ChatBot**
+    msg = """**Welcome To Control Panal Of Gojo ChatBot**
 
 **Here You Will Find Two Buttons Select AnyOne Of Them**"""
     keyboard = InlineKeyboardMarkup(
@@ -149,7 +149,7 @@ def chatbot(update: Update, context: CallbackContext):
 
 def list_all_chats(update: Update, context: CallbackContext):
     chats = sql.get_all_merissa_chats()
-    text = "<b>Merissa-Enabled Chats</b>\n"
+    text = "<b>Gojo-Enabled Chats</b>\n"
     for chat in chats:
         try:
             x = context.bot.get_chat(int(*chat))
@@ -164,15 +164,15 @@ def list_all_chats(update: Update, context: CallbackContext):
 
 __mod_name__ = "Chatbot 🤖"
 __help__ = """
-Merissa AI ChatBot is the only ai system which can detect & reply upto 200 language's
+gojo AI ChatBot is the only ai system which can detect & reply upto 200 language's
 
-❂ `/token` : To get your Merissa Chatbot Token.
+❂ `/token` : To get your Gojo Chatbot Token.
 ❂ `/chatbot`: To On Or Off ChatBot In Your Chat.
 
-*Reports bugs at*: @MerissaxSupport
-*Powered by* @MerissaRobot"""
+*Reports bugs at*: @HumanzBotSupport
+*Powered by* @GojoManagerbot"""
 
-CHATBOTK_HANDLER = CommandHandler("chatbot", merissa)
+CHATBOTK_HANDLER = CommandHandler("chatbot", gojo)
 ADD_CHAT_HANDLER = CallbackQueryHandler(merissaadd, pattern=r"add_chat")
 RM_CHAT_HANDLER = CallbackQueryHandler(merissarm, pattern=r"rm_chat")
 CHATBOT_HANDLER = MessageHandler(
