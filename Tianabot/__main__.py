@@ -564,10 +564,10 @@ Aɢᴀɪɴ  Tʜᴀɴᴋs  Fᴏʀ  Usɪɴɢ  Mᴇ
 - Stream Video or Music on Voice Chat by selecting inline Buttons you get
 
 
-✗ *Tiana Database Saved Playlists*:
+✗ *Gojo Database Saved Playlists*:
 
 /createplaylist
-- Create Your Playlist on Tiana's Server with Custom Name
+- Create Your Playlist on Gojo's Server with Custom Name
 
 /playlist 
 - Check Your Saved Playlist On Servers.
@@ -576,7 +576,7 @@ Aɢᴀɪɴ  Tʜᴀɴᴋs  Fᴏʀ  Usɪɴɢ  Mᴇ
 - Delete any saved music in your playlist
 
 /playplaylist 
-- Start playing Your Saved Playlist on Tiana Servers.""",
+- Start playing Your Saved Playlist on Gojo Servers.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -629,7 +629,7 @@ Gojo has a additional feature for non-admin users who want to use admin commands
 
 
 /mstart 
-- Start the Tiana Music Bot.
+- Start the Gojo Music Bot.
 
 /mhelp 
 - Get Commands Helper Menu with detailed explanations of commands.
