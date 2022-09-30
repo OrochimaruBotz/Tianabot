@@ -13,7 +13,7 @@ async def repo(_, message):
         photo=START_IMG,
         caption=f"""✨ **Hey I'm** {BOT_NAME}
 
-**Owner : [Click Here](https://t.me/{OWNER_USERNAME})**
+**Owner : [Gods](https://t.me/{OWNER_USERNAME})**
 **Python Version :** `{y()}`
 **Library Version :** `{o}`
 **Telethon Version :** `{s}`
@@ -24,7 +24,7 @@ async def repo(_, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(text="📄 Source", url="https://github.com/prince-botz/tianabot"), 
+                    InlineKeyboardButton(text="📄 Source", url="https://github.com/"), 
                     InlineKeyboardButton(
                         "🫂 Support", url=f"https://t.me/{SUPPORT_CHAT}")
                 ]
